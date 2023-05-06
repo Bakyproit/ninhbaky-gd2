@@ -68,36 +68,36 @@
   border: none;
   background: var(--bg-main);
 } */
-/* .maincontent__act-cancel:hover {
+.maincontent__act-cancel:hover {
   text-decoration: underline;
   color: var(--color-blue5);
-} */
-/* .maincontent__act-filter {
+}
+.maincontent__act-filter {
   border: 1px solid var(--color-blue5) ;
-}  */
+} 
 .maincontent__act-filter p{
   color: var(--color-blue5);
 }
-/* .maincontent__act-filter:hover {
+.maincontent__act-filter:hover {
   background: var(--color-blue1);
-} */
+}
 
-/* .maincontent__act-default{
+.maincontent__act-default{
   border : 1px solid var(--border) ;
-} */
+}
 .maincontent__act-default p{
   color : var(--color-text) ;
 }
-/* .maincontent__act-default:hover {
+.maincontent__act-default:hover {
   background: var(--bg-li);
-} */
+}
 
-/* .maincontent__act-delete {
+.maincontent__act-delete {
   border: 1px solid var(--color-red1);
-} */
+}
 .maincontent__act-delete p{
   color: var(--color-red1);
 }
-/* .maincontent__act-delete:hover {
+.maincontent__act-delete:hover {
   background: var(--color-red2);
-} */
+}
