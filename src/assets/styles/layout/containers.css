@@ -1,0 +1,23 @@
+.containers {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas:
+    "navigation navigation"
+    "sidebar__expand maincontent";
+  overflow: hidden;  
+}
+::-webkit-scrollbar {
+  background: var(--white-color);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    z-index: 200;
+  background: #cdd3d6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}

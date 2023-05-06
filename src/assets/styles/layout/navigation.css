@@ -1,0 +1,165 @@
+
+.navigation {
+  width: 100%;
+  grid-area: navigation;
+  background: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+}
+/* -------------------------------------------------------------left-------------------------------------------------------- */
+
+.navigation__menu {
+  background: var(--url-image2) no-repeat -239px 0px;
+}
+.navigation__menu:hover,
+.navigation__logo:hover {
+  cursor: pointer;
+}
+/* -----------------------------------            rigth------------------------ */
+.navigation__notification,
+.navigation__instruct,
+.navigation__regulations,
+.navigation__setting {
+  margin: 16px 12px;
+}
+.navigation__note-notification,
+.navigation__note-instruct,
+.navigation__note-regulations,
+.navigation__note-setting {
+  box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
+  background: var(--color-toolip); 
+  color : var(--white-color) ;
+  z-index: 300;
+}
+.navigation__notification:hover,
+.navigation__instruct:hover,
+.navigation__regulations:hover,
+.navigation__setting:hover{
+  cursor: pointer;
+  background-color: var(--color-hover);
+}
+/* ----------------------------------------------------------------- notification--------------------------------------------*/
+.navigation__notification {
+  background: var(--url-image2) no-repeat -288px 0px;
+}
+
+/* display */
+.navigation__notification:hover 
+.navigation__note-notification {
+  display: block;
+}
+
+.navigation__note-notification ,
+.navigation__note-instruct{
+  width: 70px;
+  position: relative;
+  top: 30px;
+  left: -36px;
+  display: none;
+}
+.navigation__note-notification::before ,
+.navigation__note-instruct::before{
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent var(--color-toolip) transparent;
+  position: absolute;
+  top: -16px;
+  right: 32px;
+}
+
+/*------------------------------------------------------------ instruct-------------------------------------------- */
+.navigation__instruct {
+  background: var(--url-image2) no-repeat -312px 0px;
+}
+.navigation__instruct:hover .navigation__note-instruct {
+  display: block;
+}
+
+/*----------------------------------------------------------- instruct----------------------------------------------- */
+
+/* -----------------------------------------------------------regulations-------------------------------------------- */
+
+.navigation__regulations {
+  background: var(--url-image2) no-repeat -384px -0px;
+}
+/* display */
+.navigation__regulations:hover .navigation__note-regulations {
+  display: block;
+}
+.navigation__note-regulations,
+.navigation__note-setting {
+  width: 112px;
+  position: relative;
+  top: 30px;
+  left: -53px;
+  display: none;
+}
+.navigation__note-regulations::before,
+.navigation__note-setting::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent var(--color-toolip) transparent;
+  position: absolute;
+  top: -16px;
+  right: 56px;
+}
+/*--------------------------------------------------------- regulations --------------------------------*/
+
+/* ------------------------------------------------------------setting--------------------------------- */
+.navigation__setting {
+  background: var(--url-image2) no-repeat -144px 0px;
+}
+/* display */
+.navigation__setting:hover 
+.navigation__note-setting {
+  display: block;
+}
+/* ---------------------------------------------------------------------------------------------click */
+
+
+/*  */
+.navigation__setting-list {
+  width: 230px;
+  background: var(--white-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
+  z-index: 99;
+  position: absolute;
+  top: 56px;
+  right: 10px;
+  color: var(--color-text);
+  cursor: context-menu;
+  display: none;
+}
+.navigation__setting-list::before {
+  content: "";
+  border: 20px solid;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  top: -27px;
+  right: 52px;
+}
+.navigation__setting-list::after{
+  content: "";
+  border: 30px solid;
+  border-color: transparent transparent transparent transparent;
+  position: absolute;
+  top: -33px;
+  right: 39px;
+}
+.navigation__setting-title {
+  cursor: auto;
+  position: relative;
+  top: 16px;
+}
+.navigation__setting-item:hover {
+  cursor: pointer;
+  background: var(--primary-li);
+}
+/* ----------------------------------------------------------setting-------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------avatar----------------------------------------------- */
+.navigation__avatar {
+  position: relative;
+}
+/* ----------------------------------------------------avatar-------------------------------------------------------- */

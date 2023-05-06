@@ -1,0 +1,103 @@
+
+
+/*  */
+.addemulation{
+    display: none;
+}
+
+.popup{
+    width: 600px;
+}
+.modal__inner .popup__header{
+    margin-top: 0;
+    padding-top: 20px;
+}
+.popup__ask{
+    background: var(--url-image2) no-repeat -312px 0px;
+    margin-top: 2px;
+    margin-left: 222px;
+}
+/* dis error */
+.text__error{
+    color : #EB3333 ; 
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    display: none;
+}
+
+.popup__type{
+    display: flex;
+}
+.popup__input{
+    margin-right: 10px;
+    flex: 1;
+}
+
+
+.popup__checkbox{
+    flex : 1 ;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popup__checkbox label{
+    font-weight: bold;
+    color : var(--color-tilte) ;
+    line-height: 18px ;
+}
+.popup__check-user{
+    padding-top: 2px;
+}
+.check__name{
+    display: flex;
+    justify-content: space-between;
+}
+.popup__box{
+    width: 130px;
+    display: flex;
+    margin: 14px 0 10px 0;
+}
+.popup__box p{
+    margin-left: 8px;
+    line-height: 18px ;
+}
+
+.popup__check-movement{
+    /* margin-top: 14px; */
+}
+.text-note{
+    margin-top: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+}
+.text-note:focus{
+  border: 1px solid  #39AC66; ;
+
+}
+.text-note:hover{
+    border : 1px solid var(--color-border) ;
+}
+textarea{
+    border: none;
+    padding: 6px 12px;
+    resize: none;
+    background: 0 0;
+    outline: none;
+}
+.btn__bg:hover{
+   background: var(--bg-li);
+}
+/*  */
+.popup__btn-add {
+    margin-left: 8px;
+    color : var(--color-border); 
+    border : 1px solid var(--color-border) ;
+}
+.popup__btn-add:hover{
+    background: #E6F2FF;
+}
+.btn__apply:hover{
+   background: #007AFF;
+}

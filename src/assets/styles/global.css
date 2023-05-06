@@ -1,0 +1,40 @@
+@import url(./layout/containers.css);
+
+@import url(./component/icon.css);
+@import url(./component/button.css);
+@import url(./component/boxcheck.css);
+@import url(./component/notification.css);
+@import url(./component/textfield.css);
+@import url(./component/usermenu.css);
+@import url(./component/table.css);
+@import url(./component/pagination.css);
+@import url(./component/dropdownlist.css);
+@import url(./component/popupfilter.css);
+@import url(./component/addemulation.css);
+@import url(./component/updateemulation.css);
+
+
+@import url(./color.css);
+@import url(./config.css);
+@import url(./url.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body,html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+

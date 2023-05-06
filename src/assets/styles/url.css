@@ -1,0 +1,18 @@
+:root {
+  --url-image2: url("../img/CeGo_Sprites.c193503b.svg");
+  --url-image3: url("../img/ic_notify1_48.32c89c11.svg");
+  --url-image4: url("../img/ic_notify2_48.f7368ebb.svg");
+  --url-image5: url("../img/ic_notify3_48.66c09975.svg");
+  --url-image6: url("../img/ic_notify4_48.a8440a87.svg");
+  --url-image7: url("../img/ic_change_password.35654efd.svg");
+
+  --url-logout : url("../img/ic_log_out.c8494c69.svg") ;
+  --url-gif :url("../img/ic_gift.22c87948.svg") ;
+  --url-profile : url("../img/ic_setting_profile.10919537.svg") ;
+  --url-security : url("../img/ic_setting_security.65a533a1.svg");
+
+  --url-menu: url('../img/ic_decision_menu_default.cae653f2.svg');
+  --url-guide : url('../img/ic_guide_default.186420dc.svg');
+  --url-decision : url('../img/ic_decision_menu.3fd2f620.svg');
+  --url-guider : url('../img/ic_guide.b54f8d8a.svg');
+}

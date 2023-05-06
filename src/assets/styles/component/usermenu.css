@@ -1,0 +1,109 @@
+
+.navigation__avatar-menu {
+  width: 302px;
+  min-height: 488px;
+  background: var(--white-color);
+  box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
+  z-index: 2000 ;
+  position: absolute;
+  top: 56px;
+  right: 8px;
+  display: none;
+}
+.navigation__avatar-menu:before {
+  content: "";
+  border: 20px solid;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  top: -26px;
+  right: 6px;
+}
+.navigation__avatar-email {
+  color: var(--color-icon);
+}
+.navigation__avatar-text {
+  color: var(--color-title);
+}
+.navigation__avatar-update {
+  color: var(--color-blue5);
+}
+.navigation__avatar-scroll {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-li);
+  border-radius: 100px;
+}
+.navigation__avatar-scroll-item {
+  background: var(--color-blue5);
+  width: 70%;
+  height: 6px;
+  border-radius: 100px;
+  animation: run 10s;
+}
+@keyframes run {
+  0% {
+    background-color: var(--color-blue7);
+    width: 1px;
+  }
+  100% {
+    background-color: var(--color-blue5);
+    width: 70%;
+  }
+}
+.navigation__avatar-company {
+  position: relative;
+}
+.navigation__avatar-company-input {
+  width: 100% ;
+  height: 36px;
+}
+
+.navigation__avatar-company-input:hover {
+  background: var(--primary-bg);
+}
+.navigation__avatar-company-icon {
+    background: var(--url-image2) no-repeat -170px -2px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.navigation__avatar-item:hover {
+  background: var(--bg-li);
+}
+.navigation__avatar-icon1 {
+  background: var(--url-image7) no-repeat -2px -2px;
+}
+.navigation__avatar-icon2 {
+  background: var(--url-profile) no-repeat -2px -2px;
+}
+.navigation__avatar-icon3 {
+  background: var(--url-security) no-repeat -2px -2px;
+}
+.navigation__avatar-icon4 {
+  background: var(--url-gif) no-repeat -2px -2px;
+}
+.navigation__avatar-name {
+  color: var(--color-title);
+}
+.navigation__avatar-text {
+  font-size: var(--text-body1);
+}
+.borbox{
+    border-top: 1px solid #e0e0e0;
+}
+.navigation__avatar-btn {
+  background: var(--bg-li);
+}
+.navigation__avatar-btn:hover{
+    opacity: .8;
+}
+.btn__logout{
+  height: 40px;
+  padding: 8px 0;
+}
+.navigation__avatar-btn-icon {
+  background: var(--url-logout) no-repeat 0 -1px;
+}
+.divs {
+  background: var(--white-color);
+}
