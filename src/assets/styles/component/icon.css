@@ -1,10 +1,11 @@
 
 .icon { 
-    width: 24px;
-    height:24px;
+    width: var(--value-with);
+    height: var(--value-height);
+    padding: var(--value-padding);
 }
 .item-icon{
-    width: 40px;
-    height: 40px;
+    width: var(--value-item-icon);
+    height: var(--value-item-icon);
     padding: 0 10px 12px 0;
 }

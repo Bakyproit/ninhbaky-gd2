@@ -50,12 +50,13 @@
   --color-icon-hover: #1fb6ff;
   --color-icon-focus: #1fb6ff;
   --color-icon-disable: #666666;
-
   /*  */
   --primary-color: #ff6d00;
   --primary-bg: #fbe9e7;
   --primary-li: #eff7ff;
+
   --white-color: #fff;
+
   --color-default : #eeeeee ;
   --color-icon: #666666;
   --color-text: #212121;
@@ -63,9 +64,9 @@
   --color-title: #1f1f1f;
   --color-border: #137ae8;
   --color-toolip: #1b1066;
+  
   --bg-li: #f2f2f2;
   --bg-main : #f4f5f8 ;
   --bg-pagination : #FAFAFA;
   --border: #e0e0e0;
-  
 }

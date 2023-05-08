@@ -4,6 +4,7 @@
   justify-content: center;
   padding: 8px 16px 8px 12px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 /* filter */
@@ -23,13 +24,9 @@
   border  : 1px solid var(--color-blue4) ;
   background: var(--color-blue4);
 }
-.add__icon {
-  background: var(--url-image2) no-repeat -73px -51px;
-}
 .add__name {
   color: var(--white-color);
 }
-
 /* link */
 .btn__link {
   height: 36px;
@@ -46,7 +43,7 @@
 }
 /* main */
 .btn__main {
-  height: 36px;
+  border-radius: var(--border-radius);
   background: var(--white-color);
   padding: 8px 16px;
   cursor: pointer;
@@ -74,10 +71,7 @@
   background: var(--color-red2);
 }
 
-
 .btn__text {
-  font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   text-align: center;
   color: var(--color-text);

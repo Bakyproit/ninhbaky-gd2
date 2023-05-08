@@ -1,5 +1,5 @@
 <template>
-  <div class="containers">
+  <div class="container">
     <TheNavigation></TheNavigation>
     <TheSideBar></TheSideBar>
     <TheMainContent></TheMainContent>

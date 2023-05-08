@@ -1,64 +1,73 @@
 
 .navigation {
-  width: 100%;
   grid-area: navigation;
   background: var(--white-color);
   display: flex;
   justify-content: space-between;
 }
 /* -------------------------------------------------------------left-------------------------------------------------------- */
+.navigation__left {
+  display: flex;
+}
 
-.navigation__menu {
+.navigation__left-menu {
   background: var(--url-image2) no-repeat -239px 0px;
+  margin: 16px;
 }
-.navigation__menu:hover,
-.navigation__logo:hover {
+.navigation__left-menu:hover,
+.navigation__left-logo:hover {
   cursor: pointer;
 }
-/* -----------------------------------            rigth------------------------ */
-.navigation__notification,
-.navigation__instruct,
-.navigation__regulations,
-.navigation__setting {
-  margin: 16px 12px;
+.navigation__left-logo {
+  margin: 10px 0;
 }
-.navigation__note-notification,
-.navigation__note-instruct,
-.navigation__note-regulations,
-.navigation__note-setting {
-  box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
-  background: var(--color-toolip); 
-  color : var(--white-color) ;
-  z-index: 300;
+.navigation__left-logo img {
+  width: 36px;
+  height: 36px;
 }
-.navigation__notification:hover,
-.navigation__instruct:hover,
-.navigation__regulations:hover,
-.navigation__setting:hover{
-  cursor: pointer;
-  background-color: var(--color-hover);
+.navigation__left-title {
+  margin: 16px 36px 16px 8px;
+}
+.navigation__left-title h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+/* -----------------------------------rigth------------------------ */
+.navigation__right {
+  display: flex;
 }
 /* ----------------------------------------------------------------- notification--------------------------------------------*/
-.navigation__notification {
+.navigation__right-notification {
   background: var(--url-image2) no-repeat -288px 0px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.navigation__right-note {
+  background: var(--white-color);
+  color: var(--color-text);
+  padding: 11px;
+  line-height: 18px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
 }
 
 /* display */
-.navigation__notification:hover 
-.navigation__note-notification {
+.navigation__right-notification:hover 
+.navigation__right-note-notification {
   display: block;
 }
-
-.navigation__note-notification ,
-.navigation__note-instruct{
+.navigation__right-note-notification {
+  background: var(--color-toolip); 
+  color : var(--white-color) ;
+  z-index: 300;
   width: 70px;
-  position: relative;
-  top: 30px;
-  left: -36px;
+  position: absolute;
+  top: 27px;
+  left: -40px;
   display: none;
 }
-.navigation__note-notification::before ,
-.navigation__note-instruct::before{
+.navigation__right-note-notification::before {
   content: "";
   border: 10px solid;
   border-color: transparent transparent var(--color-toolip) transparent;
@@ -68,34 +77,54 @@
 }
 
 /*------------------------------------------------------------ instruct-------------------------------------------- */
-.navigation__instruct {
+.navigation__right-instruct {
   background: var(--url-image2) no-repeat -312px 0px;
+  border-radius: 50%;
 }
-.navigation__instruct:hover .navigation__note-instruct {
+.navigation__right-instruct:hover .navigation__right-note-instruct {
   display: block;
 }
-
+.navigation__right-note-instruct {
+  background: var(--color-toolip); 
+  color : var(--white-color) ;
+  z-index: 300;
+  width: 70px;
+  position: relative;
+  top: 27px;
+  left: -40px;
+  display: none;
+}
+.navigation__right-note-instruct::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent var(--color-toolip) transparent;
+  position: absolute;
+  top: -16px;
+  right: 32px;
+}
 /*----------------------------------------------------------- instruct----------------------------------------------- */
 
 /* -----------------------------------------------------------regulations-------------------------------------------- */
 
-.navigation__regulations {
+.navigation__right-regulations {
   background: var(--url-image2) no-repeat -384px -0px;
+  border-radius: 50%;
 }
 /* display */
-.navigation__regulations:hover .navigation__note-regulations {
+.navigation__right-regulations:hover .navigation__right-note-regulations {
   display: block;
 }
-.navigation__note-regulations,
-.navigation__note-setting {
-  width: 112px;
+.navigation__right-note-regulations {
+  background: var(--color-toolip); 
+  color : var(--white-color) ;
+  z-index: 300;
+  width: 110px;
   position: relative;
-  top: 30px;
-  left: -53px;
+  top: 27px;
+  left: -55px;
   display: none;
 }
-.navigation__note-regulations::before,
-.navigation__note-setting::before {
+.navigation__right-note-regulations::before {
   content: "";
   border: 10px solid;
   border-color: transparent transparent var(--color-toolip) transparent;
@@ -106,32 +135,52 @@
 /*--------------------------------------------------------- regulations --------------------------------*/
 
 /* ------------------------------------------------------------setting--------------------------------- */
-.navigation__setting {
+.navigation__right-setting {
   background: var(--url-image2) no-repeat -144px 0px;
+  border-radius: 50%;
+  position: relative;
 }
 /* display */
-.navigation__setting:hover 
-.navigation__note-setting {
+.navigation__right-setting:hover 
+.navigation__right-note-setting {
   display: block;
+}
+.navigation__right-note-setting {
+  background: var(--color-toolip); 
+  color : var(--white-color) ;
+  z-index: 300;
+  width: 112px;
+  position: relative;
+  top: 27px;
+  left: -59px;
+  display: none;
+}
+.navigation__right-note-setting::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent var(--color-toolip) transparent;
+  position: absolute;
+  top: -16px;
+  right: 56px;
 }
 /* ---------------------------------------------------------------------------------------------click */
 
 
 /*  */
-.navigation__setting-list {
+.navigation__right-setting-list {
   width: 230px;
   background: var(--white-color);
   border-radius: var(--border-radius);
   box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
   z-index: 99;
   position: absolute;
-  top: 56px;
-  right: 10px;
+  top: 51px;
+  right: -62px;
   color: var(--color-text);
   cursor: context-menu;
   display: none;
 }
-.navigation__setting-list::before {
+.navigation__right-setting-list::before {
   content: "";
   border: 20px solid;
   border-color: transparent transparent var(--white-color) transparent;
@@ -139,7 +188,7 @@
   top: -27px;
   right: 52px;
 }
-.navigation__setting-list::after{
+.navigation__right-setting-list::after{
   content: "";
   border: 30px solid;
   border-color: transparent transparent transparent transparent;
@@ -147,19 +196,58 @@
   top: -33px;
   right: 39px;
 }
-.navigation__setting-title {
+.navigation__right-setting-title {
+  display: block;
+  padding: 12px 24px;
+  line-height: 24px;
+  font-weight: 700;
   cursor: auto;
   position: relative;
   top: 16px;
 }
-.navigation__setting-item:hover {
+.navigation__right-setting-item-list{
+  margin:16px 0;
+
+}
+.navigation__right-setting-item {
+  padding: 12px 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.navigation__right-setting-item:hover {
   cursor: pointer;
   background: var(--primary-li);
 }
 /* ----------------------------------------------------------setting-------------------------------------------- */
+.navigation__right-notification,
+.navigation__right-instruct,
+.navigation__right-regulations,
+.navigation__right-setting {
+  margin: 16px 12px;
+}
+.navigation__right-notification:hover,
+.navigation__right-instruct:hover,
+.navigation__right-regulations:hover,
+.navigation__right-setting:hover,
+.navigation__right-avatar:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
 /* -------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------avatar----------------------------------------------- */
-.navigation__avatar {
+.navigation__right-avatar {
+  width: 32px;
+  height: 32px;
+  padding: 12px 16px 12px 12px;
   position: relative;
+}
+.navigation__right-avatar{
+  width: 32px;
+  height: 32px;
+}
+.navigation__right-avatar img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 /* ----------------------------------------------------avatar-------------------------------------------------------- */

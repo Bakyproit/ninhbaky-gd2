@@ -7,4 +7,10 @@
   --text-heading3: 16px;
   --text-heading2: 18px;
   --text-heading1: 20px;
+
+  --value-with: 20px;
+  --value-height: 20px;
+  --value-item-icon: 40px;
+  --value-padding: 2px;
+  --border-radius: 4px;
 }

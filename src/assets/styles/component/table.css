@@ -1,21 +1,26 @@
 .table {
   width: 98%;
   background: var(--white-color);
+  border-radius: var(--border-radius);
   box-shadow: inset 0 1.5px 2px 0 rgba(0, 0, 0, 0.1);
-  height: calc(100vh - 198px);
+  height: calc(100vh - 193px);
+  margin: 0 24px 24px 0;
   position: relative;
 }
+
 .table__box {
   width: 100%;
   height: calc(100% - 50px);
-  overflow: auto;
-} 
+  overflow: auto ;
+}
+
 table {
   width: 100%;
   height: 300px;
   border-collapse: collapse;
   cursor: pointer;
 }
+
 table tr {
   display: grid;
   grid-template-columns: 53px 3fr 2fr 3fr 3fr 3fr 3fr;
@@ -25,8 +30,8 @@ td {
   height: 48px;
   padding: 0 16px;
   text-align: left;
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -44,15 +49,19 @@ th {
   background: var(--primary-bg);
 }
 .table__tr.active {
-  background: var(--primary-li);
+  background: #e0ebff;
 }
 
 .td__status {
+  display: flex;
   position: relative;
 }
+
 .status {
   margin-left: -10px;
   width: 130px;
+  display: flex;
+  padding: 4px 0;
   position: absolute;
   top: 9px;
   left: 20px;
@@ -63,18 +72,26 @@ th {
 .status__icon--default {
   background: var(--url-image2) no-repeat -28px -141px;
 }
+.status__text {
+  line-height: 24px;
+}
 
 tbody tr:hover .box__act {
   display: flex;
 }
 
 .act {
+  display: flex;
   position: absolute;
   top: 6px;
   left: 100px;
 }
 .box__act {
-  background-color: var(--white-color);
+  padding: 6px;
+  background-color: #fff;
+  margin-right: 4px;
+  margin-left: 4px;
+  border-radius: 50%;
   z-index: 20;
   display: none;
 }
@@ -86,8 +103,12 @@ tbody tr:hover .box__act {
   display: block;
 }
 .act__fix-toolip {
+  border-radius: 8px;
   background: var(--color-toolip);
   color: var(--white-color);
+  width: 40px;
+  line-height: 24px;
+  text-align: center;
   position: absolute;
   top: -55px;
   left: -10px;
@@ -98,10 +119,12 @@ tbody tr:hover .box__act {
   border: 10px solid;
   border-color: var(--color-toolip) transparent transparent transparent;
   position: absolute;
-  top: 32px;
+  top: 34px;
   left: 10px;
 }
-
+.act__fix-toolip p {
+  padding: 8px;
+}
 .act__add {
   background: var(--url-image2) no-repeat -48px -49px;
   position: relative;
@@ -110,11 +133,14 @@ tbody tr:hover .box__act {
   display: block;
 }
 .act__add-toolip {
+  border-radius: 8px;
   background: var(--color-toolip);
   color: var(--white-color);
+  width: 100px;
+  line-height: 24px;
   position: absolute;
   top: -55px;
-  right: -8px;
+  right: -9px;
   display: none;
 }
 .act__add-toolip::before {
@@ -122,25 +148,29 @@ tbody tr:hover .box__act {
   border: 10px solid;
   border-color: var(--color-toolip) transparent transparent transparent;
   position: absolute;
-  top: 32px;
-  right: 10px;
+  top: 34px;
+  right: 15px;
 }
-
+.act__add-toolip p {
+  padding: 8px;
+}
 .act__add:hover .act__add-item-list {
   display: block;
 }
 /* display */
-.act__item-list {
+.act__add-item-list {
   width: 230px;
   background: var(--white-color);
-  color: var(--color-text);
+  border-radius: var(--border-radius);
   box-shadow: 0 0 16px rgba(23, 27, 42, 0.24);
+  /* z-index: 99; */
   position: absolute;
   top: 35px;
-  right: -4px;
+  right: 0px;
+  color: var(--color-text);
   display: none;
 }
-.act__item-list::before {
+.act__add-item-list::before {
   content: "";
   border: 20px solid;
   border-color: transparent transparent transparent transparent;
@@ -148,15 +178,27 @@ tbody tr:hover .box__act {
   top: -16px;
   right: -3px;
 }
-.act__item {
+.act__add-item {
+  padding: 12px 24px;
+  font-weight: 500;
   color: var(--color-title);
 }
-.act__item:hover {
+.act__add-item:first-child {
+  margin-top: 16px;
+}
+.act__add-item:last-child {
+  margin-bottom: 16px;
+}
+.act__add-item p {
+  line-height: 24px;
+}
+.act__add-item:hover {
   background: var(--bg-li);
 }
-.act__item--defaul {
-  color: var(--color-default);
+.act__add-item--defaul {
+  font-weight: 400;
+  color: #eeeeee;
 }
-.act__item--delete {
-  color: var(--color-red1);
+.act__add-item--delete {
+  color: #eb3333;
 }
