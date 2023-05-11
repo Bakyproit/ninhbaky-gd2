@@ -1,18 +1,13 @@
 @import url(./layout/containers.css);
 
-@import url(./component/icon.css);
-@import url(./component/button.css);
 @import url(./component/boxcheck.css);
 @import url(./component/notification.css);
 @import url(./component/textfield.css);
 @import url(./component/usermenu.css);
 @import url(./component/table.css);
 @import url(./component/pagination.css);
-@import url(./component/dropdownlist.css);
-@import url(./component/popupfilter.css);
-@import url(./component/addemulation.css);
-@import url(./component/updateemulation.css);
-
+/* @import url(./component/addemulation.css); */
+/* @import url(./component/updateemulation.css); */
 
 @import url(./color.css);
 @import url(./config.css);
@@ -31,6 +26,9 @@ h2,
 p {
   margin: 0;
 }
+a{
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -45,23 +43,20 @@ ul {
   text-align: center;
 }
 
-.bb-right {
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
 .text-title {
   font-size: 20px;
   font-weight: 700;
   color: var(--color-text);
 }
-.block {
-  display: block;
+.icon { 
+  width: var(--value-with);
+  height: var(--value-height);
+  padding: var(--value-padding);
 }
-.open {
-  display: flex;
-}
-.close {
-  display: none;
+.item-icon{
+  width: var(--value-item-icon);
+  height: var(--value-item-icon);
+  padding: 0 10px 12px 0;
 }
 
 

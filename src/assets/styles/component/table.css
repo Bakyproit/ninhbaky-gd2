@@ -2,7 +2,7 @@
   width: 98%;
   background: var(--white-color);
   border-radius: var(--border-radius);
-  box-shadow: inset 0 1.5px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 11px rgba(0,0,0,.08);
   height: calc(100vh - 193px);
   margin: 0 24px 24px 0;
   position: relative;
@@ -30,8 +30,8 @@ td {
   height: 48px;
   padding: 0 16px;
   text-align: left;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -42,14 +42,13 @@ td:last-child {
 }
 th {
   font-weight: 700;
-  color: #1f1f1f;
-  background: var(--bg-li);
+  color: var(--color-gray9);
 }
 .table__tr:hover {
   background: var(--primary-bg);
 }
 .table__tr.active {
-  background: #e0ebff;
+  background: var(--bg-tr);
 }
 
 .td__status {
@@ -88,7 +87,7 @@ tbody tr:hover .box__act {
 }
 .box__act {
   padding: 6px;
-  background-color: #fff;
+  background-color: var(--white-color);
   margin-right: 4px;
   margin-left: 4px;
   border-radius: 50%;
@@ -181,7 +180,7 @@ tbody tr:hover .box__act {
 .act__add-item {
   padding: 12px 24px;
   font-weight: 500;
-  color: var(--color-title);
+  color: var(--color-gray9);
 }
 .act__add-item:first-child {
   margin-top: 16px;
@@ -197,8 +196,8 @@ tbody tr:hover .box__act {
 }
 .act__add-item--defaul {
   font-weight: 400;
-  color: #eeeeee;
+  color: var(--color-default);
 }
 .act__add-item--delete {
-  color: #eb3333;
+  color: var(--color-red1);
 }

@@ -10,7 +10,7 @@
   background: var(--bg-main);
 }
 
-.maincontent__title-name{
+.maincontent__title-name {
   margin-right: 24px;
 }
 /* header */
@@ -49,55 +49,32 @@
   cursor: pointer;
   position: relative;
 }
-.btn__filter{
-  background: var(--white-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border);
-}
-.btn__search:hover {
-  cursor: pointer;
+.btn__filter:hover {
   background: var(--bg-li);
 }
-
 .filter__icon {
   background: var(--url-image2) no-repeat -26px -50px;
   margin-right: 4px;
   box-sizing: border-box;
 }
-.filter__name{
-  line-height: 20px;
-  text-align: center;
-}
+
 /*add ----block */
 .maincontent__add {
   /* display: none; */
 }
-.maincontent__add:hover {
-  opacity: 0.8;
-  cursor: pointer;
+.btn__add {
+  border: 1px solid var(--color-blue5) !important;
 }
-.btn__add{
-  border  : 1px solid var(--color-blue5) ;
-  background: var(--color-blue5);
-  border-radius: var(--border-radius);
-}
-/* modal block */
 .add__icon {
   background: var(--url-image2) no-repeat -74px -51px;
   box-sizing: border-box;
   margin-right: 4px;
 }
-.add__name {
-  line-height: 20px;
-  text-align: center;
-  color: var(--white-color);
-}
-/* add */
-/* click */
-/* act */
+
+
 .maincontent__act {
-  /* display: flex; */
-  display: none;
+  display: flex;
+  /* display: none; */
 }
 .maincontent__select {
   line-height: 20px;
@@ -110,26 +87,23 @@
   margin-right: 10px;
   margin-left: 4px;
 }
+
 .maincontent__cancel {
-  border: none;
   margin-left: 12px;
-  background: var(--bg-main);
-  color: var(--color-blue5);
 }
 .maincontent__cancel:hover {
   text-decoration: underline;
 }
+
 .maincontent__filter {
   margin-left: 12px;
   border: 1px solid var(--color-blue5);
-  color: var(--color-blue5);
 }
-
 .maincontent__filter:hover {
   background: var(--color-blue1);
 }
-.maincontent__default{
-  border : 1px solid var(--border) ;
+.maincontent__default {
+  border: 1px solid var(--border);
   margin-left: 12px;
 }
 .maincontent__default:hover {
@@ -139,9 +113,7 @@
   margin-left: 12px;
   padding: 8px 28px !important;
   border: 1px solid var(--color-red1);
-  color: var(--color-red1) !important;
 }
 .maincontent__delete:hover {
-  cursor: pointer;
   background: var(--color-red2);
 }

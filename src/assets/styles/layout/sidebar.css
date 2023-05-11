@@ -91,7 +91,6 @@
 }
 .sidebar__icon{
     background: var(--url-image2) no-repeat 0 0;
-    height: 24px;
 }
 .sidebar__icon1{
     background: var(--url-image2) no-repeat -50px 0;
@@ -128,22 +127,23 @@
     cursor: pointer;
     background: var(--primary-li);
 }
-.sidebar__item:hover
-.sidebar__name{
-    color : var(--primary-color) ;
-}
 .sidebar__name{
     line-height: 24px;
     font-weight: 500;
     margin-left: 12px;
 }
-.sidebar__arrow{
+.icon__arrow{
     background: var(--url-image2) no-repeat -167px -1px;
 }
-.sidebar__item:hover .bg-arrow{
+.sidebar__item:hover .icon__arrow{
     background: var(--url-image2) no-repeat -167px -25px;
 }
-
+.sidebar__text{
+    color : var(--color-text) ;
+}
+.sidebar__item:hover .sidebar__text {
+    color : var(--primary-color) ;
+}
 .sidebar__item:hover
 .sidebar__icon{
     background: var(--url-image2) no-repeat 0 -24px;
@@ -185,6 +185,7 @@
     background: var(--url-guider) no-repeat -1px 0;
 }
 
+
 .sidebar__btn{
     width: 176px;
     margin: 0 12px;
@@ -193,20 +194,15 @@
     position: absolute;
     bottom: 24px;
 }
-.sidebar__btn:hover{
-    cursor: pointer;
-    opacity: 0.6;
-}
-.btn__sidebar{
+.btn__collapse{
+    border: none !important;
     height: 48px !important;
+    border-radius: 8px !important;
     justify-content: flex-start !important;
-    padding: 12px 24px !important;
+    padding: 12px 8px !important;
+    line-height: 24px !important;
 }
 .sidebar__btn-icon{
     background: var(--url-image2) no-repeat -191px 0;
-}
-.sidebar__btn-text{
-    line-height: 24px;
-    text-align: center;
-    margin-left: 16px;    
+    margin-right: 16px;
 }
