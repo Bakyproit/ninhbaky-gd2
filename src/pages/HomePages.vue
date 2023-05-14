@@ -1,25 +1,37 @@
 <template>
   <div class="container">
     <TheNavigation></TheNavigation>
-    <TheSideBar></TheSideBar>
-    <TheMainContent>
-      
-    </TheMainContent>
+    <div class="content">
+      <TheSideBar></TheSideBar>
+      <TheMain>
+        
+      </TheMain>
+    </div>
+    <!-- <misa-combobox ></misa-combobox> -->
   </div>
 </template>
 
 <script>
 import TheNavigation from "../layout/TheNavigation.vue";
 import TheSideBar from "../layout/TheSideBar.vue";
-import TheMainContent from "../layout/TheMainContent.vue";
-
+import TheMain from "@/layout/TheMain.vue";
 export default {
   name: "App",
   components: {
     TheNavigation,
     TheSideBar,
-    TheMainContent,
+    TheMain ,
   },
 };
 </script>
-<style></style>
+<style>
+.container{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;  
+}
+.content{
+  display: flex;
+}
+</style>

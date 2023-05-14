@@ -1,3 +1,51 @@
+<template lang="">
+  <div class="pagination">
+    <div class="pagination__left">
+      <p>{{ sum }}</p>
+      <span class="record">12</span>
+      <p>{{ record }}</p>
+    </div>
+    <div class="pagigation__right">
+      <p>{{ page }}</p>
+      <div class="drop">
+        <div class="drop__number">
+          <p class="number">50</p>
+        </div>
+        <div class="drop__btn">
+          <div class="drop__icon icon"></div>
+        </div>
+        <div class="drop__item">
+          <div class="drop__item1">10</div>
+          <div class="drop__item1">20</div>
+          <div class="drop__item1">50</div>
+          <div class="drop__item1">100</div>
+        </div>
+      </div>
+      <p>
+        <span class="number__to">1</span>-<span class="number__from">12</span>
+        {{ record }}
+      </p>
+      <div class="prev">
+        <div class="prev__left icon"></div>
+        <div class="prev__right icon"></div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: "MisaPagination",
+  data() {
+    return {
+      sum: "Tổng số :",
+      record: "Bản ghi",
+      page: "Số bản ghi / trang",
+    };
+  },
+  props: {},
+};
+</script>
+<style>
 
 /* pagination */
 .pagination{
@@ -98,3 +146,4 @@
 .prev__right{
     background: var(--url-image2) no-repeat -47px -160px;
 }
+</style>

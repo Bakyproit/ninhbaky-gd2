@@ -1,5 +1,7 @@
 :root {
+  --url-image1: url("../img/sprites.06b14dc5.svg");
   --url-image2: url("../img/CeGo_Sprites.c193503b.svg");
+
   --url-image3: url("../img/ic_notify1_48.32c89c11.svg");
   --url-image4: url("../img/ic_notify2_48.f7368ebb.svg");
   --url-image5: url("../img/ic_notify3_48.66c09975.svg");

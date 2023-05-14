@@ -1,30 +1,62 @@
 .table {
-  width: 98%;
   background: var(--white-color);
   border-radius: var(--border-radius);
   box-shadow: 0 0 11px rgba(0,0,0,.08);
-  height: calc(100vh - 193px);
-  margin: 0 24px 24px 0;
+  min-height: 300px;
+  flex: 1;
   position: relative;
 }
-
 .table__box {
   width: 100%;
-  height: calc(100% - 50px);
-  overflow: auto ;
+  height: calc(100% - 48px);
+  overflow-y :scroll ;
 }
 
-table {
+.table__main{
   width: 100%;
-  height: 300px;
+  height: 528px;
   border-collapse: collapse;
   cursor: pointer;
 }
-
-table tr {
-  display: grid;
-  grid-template-columns: 53px 3fr 2fr 3fr 3fr 3fr 3fr;
+.table__header{
+  background: var(--white-color);
+  position: sticky;
+  top: 0;
 }
+.table__tilte,
+.table__item{
+  display: flex;
+}
+.table__ckeckbox{
+  width: 53px;
+  position: sticky;
+  left: 0;
+  top:0 ;
+}
+.table__brand{
+  width:26%;
+}
+.table__id{
+  width: 12%;
+}
+.table__people{
+  width: 18%;
+}
+.table__grant{
+  width: 17%;
+}
+.table__movement{
+  width: 14%;
+
+}
+.td__status{
+  width: 20%;
+  display: flex;
+  position: relative;
+}
+
+
+
 th,
 td {
   height: 48px;
@@ -40,20 +72,13 @@ th:last-child,
 td:last-child {
   border-right: 0;
 }
-th {
-  font-weight: 700;
-  color: var(--color-gray9);
-}
-.table__tr:hover {
+
+
+.table__item:hover {
   background: var(--primary-bg);
 }
-.table__tr.active {
+.table__item.active {
   background: var(--bg-tr);
-}
-
-.td__status {
-  display: flex;
-  position: relative;
 }
 
 .status {

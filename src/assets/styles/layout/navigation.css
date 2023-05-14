@@ -1,6 +1,7 @@
 
 .navigation {
-  grid-area: navigation;
+  width: 100%;
+  height: 56px;
   background: var(--white-color);
   display: flex;
   justify-content: space-between;
@@ -136,7 +137,7 @@
 
 /* ------------------------------------------------------------setting--------------------------------- */
 .navigation__right-setting {
-  background: var(--url-image2) no-repeat -144px 0px;
+  background: var(--url-image1) no-repeat -264px -168px;
   border-radius: 50%;
   position: relative;
 }
